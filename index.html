@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css_pages</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Блок `header`-->
+    <header class="header">
+      <div class="header__logo">
+        <img src="img/par64.png" alt="par64" />
+      </div>
+      <div class="header__body">
+        <h1 class="header__title">Домашняя работа 1.6</h1>
+        <nav class="header__nav">
+          <!-- Независимый блок `списка меню`, можно использовать вне header-->
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link" href="#">Главная</a></li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">Обо мне</a>
+            </li>
+            <li class="nav__item">
+              <a href="#topic" class="nav__link">Тема урока</a>
+            </li>
+            <li class="nav__item">
+              <a href="#task" class="nav__link">Решение</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__search">
+        <!-- Независимый блок `поиска`, можно использовать вне header-->
+        <form class="search-form search-form--focused">
+          <input class="search-form__input" />
+          <button class="search-form__button">Найти</button>
+        </form>
+      </div>
+    </header>
+    <!-- Контент -->
+    <main class="content">
+      <section class="content__section">
+        <h2 class="content__section-title" id="about">Обо мне</h2>
+        <p class="content__section-text">
+          Участник программы профессиональной переподготовки "web-разработчик" - <br>
+          Королев Дмитрий
+        </p>
+        <h2 class="content__section-title" id="topic">Тема урока</h2>
+        <p class="content__section-text">
+          CSS
+        </p>
+        <h2 class="content__section-title" id="task">Решение</h2>
+        <p class="content__section-text">
+          Данная web-страница разработана с использованием методологии БЭМ,
+          а так же с применением CSS стилей.
+          Файл стилей подключен в раздере "head" html-документа, при помощи тега "link". 
+          При выполнении данной работы я узнал как задавать цвет заднего фона блоков и элементов, 
+          цвет самого контента, шрифт текста, размер элементов и т.д. 
+          Познакомился с технологией "flex-box" и использовал её в разработке header-а страницы. 
+          Так же применил псевдокласс и псевдоэлемент к "якорным" элементам, по которым перешли по ссылке. 
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text" id="contact">© 2024 training web-page Par64</p>
+    </footer>
+  </body>
+</html>
